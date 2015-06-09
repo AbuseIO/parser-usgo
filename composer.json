@@ -1,0 +1,8 @@
+{
+    "name": "abuseio/parser-usgo",
+    "description": "Parser addon for handling notifications from usgo abuse",
+    "require": {
+        "php": ">=5.4.0",
+        "another-vendor/package": "1.*"
+    }
+}
