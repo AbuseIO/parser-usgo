@@ -2,14 +2,10 @@
 
 namespace AbuseIO\Parsers;
 
-use Ddeboer\DataImport\Reader;
-use Ddeboer\DataImport\Writer;
-use Ddeboer\DataImport\Filter;
-
 class Usgo extends Parser
 {
     /**
-     * Create a new Blocklistde instance
+     * Create a new Usgo instance
      */
     public function __construct($parsedMail, $arfMail)
     {
@@ -57,3 +53,4 @@ class Usgo extends Parser
         return $this->success();
     }
 }
+
