@@ -29,7 +29,7 @@ class Usgo extends Parser
     public function parse()
     {
         if (($this->arfMail !== false) &&
-            (preg_match_all('/([\w\-]+): (.*)[ ]*\r?\n/', $this->arfMail['report'], $matches))
+            (preg_match_all('/([\w\-]+): (.*)[ ]*\r?\n/', $this->arfMail['report'] . PHP_EOL, $matches))
         ) {
             $report = array_combine($matches[1], $matches[2]);
             $this->feedName = 'default';
